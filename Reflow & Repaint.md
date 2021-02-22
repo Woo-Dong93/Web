@@ -78,8 +78,8 @@ function reFlow() {
   - visibillty : 태그의 가시성을 결정합니다.
 
 ```css
-#box1 { visibility: hidden; } = 보임
-#box2 { visibility: visible; } = 숨김(영역은 차지)
+#box1 { visibility: hidden; } = 숨김(영역은 차지)
+#box2 { visibility: visible; } = 보임
 #box3 { visibility: collapse; } = 겹치도록 지정
 #box4 { visibility: inherit; } = 부모상속
 ```
@@ -199,7 +199,7 @@ function animation() {
   - Normal flow는 Layout 또는 Reflow라 불리는 과정에 속하는 일부입니다.
   - 일반적인 경우, 엘리먼트 들은 margin, border, padding, content(width,height) 등 Box model을 먼저 계산한 후 Normal flow 상태의 레이아웃에 배치된다. (다른말로 선형적 배치)
     
-    - Position:absolute 또는 fixed일 경우 Norbal flow를 거치지 않고 바로 Positioning을 진행합니다.
+    - Position:absolute 또는 fixed일 경우 Normal flow를 거치지 않고 바로 Positioning을 진행합니다.
   - 즉 position:relative가 오히려 position:absolute 또는 float 속성보다 더 큰 비용을 가진다.
     
     - 3단계를 모두 거치기 때문에...
