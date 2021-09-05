@@ -138,7 +138,7 @@ function rePaint() {
 
 - 애니메이션이 들어간 노드는 가급적 **position:fixed** 또는 **position:absolute**로 지정하여 전체 노드에서 분리시키도록 해야 합니다.
   - Javascript와 CSS를 활용한 애니메이션 효과는 해당 프레임에 따라 무수히 많은 Reflow 비용이 발생하게 됩니다.
-  - Position 속성을 fiedx와 absolute로 값을 주면 지정된 노드는 전체 노드에서 분리됩니다.
+  - Position 속성을 fixed와 absolute로 값을 주면 지정된 노드는 전체 노드에서 분리됩니다.
   - 이로써 전체 노드에 걸쳐 Reflow 비용이 들지 않으며, 해당 노드의 Repaint 비용만 들게 됩니다.
   - 또한 초기에 position 값을 적용하지 않아도 애니메이션 시작 시 값을 변경하고 종료 시 다시 원복 시키는 방법도 가능합니다.
 
